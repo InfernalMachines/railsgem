@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChartKickgem</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "//www.google.com/jsapi" %>  
+  <%= javascript_include_tag "application", "chartkick" %>
+
+  <%= csrf_meta_tags %>
+  <style>html{font-family: sans-serif;}</style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

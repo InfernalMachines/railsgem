@@ -1,0 +1,51 @@
+
+<div style="width:960px; margin:0 auto;"><h1>Chartkick Gem</h1>
+
+
+
+<%= line_chart User.group_by_minute(:created_at).count %>
+
+<%= pie_chart User.group(:name).count %>
+
+<h2>To Install</h2>
+<h3>NOTE:* Does not work with SQL Lite. Switch over to Postgresql</h3>
+<h3>To use PostgreSQL in your environment:</h3>
+<p> => Goto: the Config folder in your rails project<br />
+ => Open the Database.yml file<br />
+ => Edit Development Line: Delete or comment out // *default database: db/development.sqlite3 //<br />
+ => Add PostGreSql Adaptor: <br />
+ 	==>  development:<br />
+  	==>  adapter: postgresql<br />
+  	==>  encoding: unicode<br />
+  	==>  database: chartkick_db<br />
+  	==>  pool: 5<br />
+ => Save
+  </p>
+ 
+
+<h2>Install the following Dependencies</h2>
+<ul>
+<li><a href = "https://github.com/ankane/groupdate">GroupDate:</a></li>
+<li><a href = "https://github.com/ankane/hightop">HighTop</a></li>
+<li><a href="https://github.com/ankane/active_median">Active_Median</a></li>
+</ul> 
+<p>
+<h3>Add the following to your Gem file:</h3>
+==> gem 'groupdate'<br />
+==> gem 'chartkick'<br />
+==> gem 'hightop'<br />
+==> gem 'active_median'<br />	
+</p><p>
+Bundle Install in terminal</p>
+<p>
+	<h3>Add the following links to the head of you page</h3>
+	<h4>< %= javascript_include_tag "//www.google.com/jsapi" %><br />
+  	< %= javascript_include_tag "application", "chartkick" %></h4>
+
+</p>
+
+<p>For more information on working with ChartKick go to GitHub: 
+<a href="http://ankane.github.io/chartkick/">ChartKick Site</a>
+</p>
+
+<div style="height:150px;"></div>
