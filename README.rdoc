@@ -1,28 +1,39 @@
-== README
+Chart Kick Gem
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To Install
 
-Things you may want to cover:
+NOTE:* Does not work with SQL Lite. Switch over to Postgresql
 
-* Ruby version
+To use PostgreSQL in your environment:
 
-* System dependencies
+=> Goto: the Config folder in your rails project
+=> Open the Database.yml file
+=> Edit Development Line: Delete or comment out // *default database: db/development.sqlite3 //
+=> Add PostGreSql Adaptor: 
+==> development:
+==> adapter: postgresql
+==> encoding: unicode
+==> database: chartkick_db
+==> pool: 5
+=> Save
 
-* Configuration
+Install the following Dependencies
 
-* Database creation
+GroupDate:
+HighTop
+Active_Median
+Add the following to your Gem file:
 
-* Database initialization
+==> gem 'groupdate'
+==> gem 'chartkick'
+==> gem 'hightop'
+==> gem 'active_median'
+Bundle Install in terminal
 
-* How to run the test suite
+Add the following links to the head of you page
 
-* Services (job queues, cache servers, search engines, etc.)
+< %= javascript_include_tag "//www.google.com/jsapi" %>
+< %= javascript_include_tag "application", "chartkick" %>
 
-* Deployment instructions
+For more information on working with ChartKick go to GitHub: ChartKick Site
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
