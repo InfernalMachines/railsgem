@@ -1,6 +1,6 @@
 #Chart Kick Gem
 
-##To Install<h2>
+##To Install
 
 NOTE:* Does not work with SQL Lite. Switch over to Postgresql
 
@@ -17,7 +17,7 @@ To use PostgreSQL in your environment:
 ==> pool: 5
 => Save
 
-Install the following Dependencies
+**Install the following Dependencies**
 
 GroupDate:
 HighTop
