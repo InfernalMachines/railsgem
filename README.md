@@ -1,6 +1,6 @@
-#Chart Kick Gem<h1>
+#Chart Kick Gem
 
-To Install
+##To Install<h2>
 
 NOTE:* Does not work with SQL Lite. Switch over to Postgresql
 
